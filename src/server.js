@@ -28,7 +28,7 @@ io.on('connection', socket => {
     const { user_id } = socket.handshake.query;
 
     connectedUsers[user_id] = socket.id;
-    console.log("connected to DB."+socket.id);
+    //console.log("connected to DB."+socket.id);
 });
 
 app.use((req, res, next) => {

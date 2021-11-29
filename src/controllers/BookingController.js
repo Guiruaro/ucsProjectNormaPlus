@@ -20,7 +20,7 @@ module.exports = {
 
         if (ownerSocket) {
             req.io.to(ownerSocket).emit('booking_request', booking);
-            console.log(ownerSocket);
+            //console.log(ownerSocket);
         }
 
         return res.json(booking);

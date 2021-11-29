@@ -7,12 +7,12 @@ module.exports = {
         const { spot_id } = req.params;
         if (spot_id) {
           const spots = await Spot.find({ _id: spot_id });
-          console.log(1,spots);
+          //console.log(1,spots);
           return res.json(spots);
         } 
         
         const spots = await Spot.find({ cats: cat });
-        console.log(2,cat);
+        //console.log(2,cat);
         return res.json(spots);
         
     },
